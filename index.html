@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practica Primer Parcial</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+
+    <script src="./js/scripts.js" type="module" defer></script>
+
+  </head>
+  <body>
+
+    <header>
+        <a href="./index.html"><img src="./assets/logo.jpg" width="200px" alt="Logo"></a>
+
+        <nav>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Anuncios</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <p>
+        <h1 class="importante">ADMINISTRACION</h1>
+        <img id="img-consecionaria" src="./assets/consecionaria.jpg" alt="imagen consecionaria">
+        <br>
+    </p>
+
+    <main>
+      <section class="container">
+        <form>
+          <input type="hidden" name="id" />
+
+          <!-- Titulo -->
+          <label for="titulo">TITULO:</label><br />
+          <input
+            type="text"
+            id="titulo"
+            name="titulo"
+            placeholder="Titulo"
+            required
+          /><br /><br />
+
+          <!-- Transaccion -->
+          <fieldset>
+            <legend>TRANSACCION:</legend>
+            <input type="radio" name="transaccion" value="Venta" />Venta<br /><br />
+            <input type="radio" name="transaccion" value="Alquiler" />
+            Alquiler<br />
+          </fieldset><br />
+
+          <!-- DESCRIPCION -->
+          <label for="descripcion">DESCRIPCION:</label><br />
+          <input
+            type="text"
+            id="descripcion"
+            name="descripcion"
+            placeholder="Descripcion"
+            required
+          /><br /><br />
+
+          <!-- PRECIO -->
+            <label for="precio">PRECIO:</label><br />
+            <input
+              type="text"
+              id="precio"
+              name="precio"
+              placeholder="Precio"
+              required
+            /><br /><br />
+
+          <div class="atributosAuto"> <!-- CANTIDAD PUERTAS -->
+            <label for="cantPuertas">
+              <img src="./assets/puertas.png" alt="Imagen cant. de puertas" width="25px">
+            </label>
+            <input
+              type="number"
+              id="cantPuertas"
+              name="cantPuertas"
+              placeholder="Puertas"
+              required
+            /><br/><br/>
+          </div>
+
+          <div class="atributosAuto"> <!-- CANTIDAD KMS -->
+            <label for="cantKMS">
+              <img src="./assets/velocimetro.png" alt="Imagen cant de KMS" width="25px">
+            </label>
+            <input
+              type="number"
+              id="cantKMS"
+              name="cantKMS"
+              placeholder="KMs"
+              required
+            /><br/><br/>
+          </div>
+
+          <div class="atributosAuto"><!-- POTENCIA -->
+            <label for="potencia">
+              <img src="./assets/potencia.png" alt="Imagen cant de potencia" width="25px">
+            </label>
+            <input
+              type="number"
+              id="potencia"
+              name="potencia"
+              placeholder="Potencia"
+              required
+            /><br/><br/>
+          </div>  
+
+
+          <!-- Alta -->
+          <input type="submit" id="btnSubmit" value="Guardar">
+          
+          <!-- Baja -->
+          <input
+            type="button"
+            id="btnEliminar"
+            value="Eliminar"
+            class="oculto"
+          />
+
+          <!-- Modificacion -->
+          <input
+            type="button"
+            id="btnModificar"
+            class="oculto"
+          />
+
+          <!-- Cancelar -->
+          <input 
+           type="button" 
+           id="btnCancelar"
+           class="oculto"
+           value="Cancelar"
+          />
+          
+        </form>
+      </section>
+
+      <section class="container">
+
+        <div id="spinner-container"></div>
+    </section>
+
+      <section class="container">
+
+        <div id="divLista"></div>
+      </section>
+
+
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Anuncios</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <p>
+            Todos los derechos reservados 2021 &copy
+        </p>
+    </footer>
+  </body>
+</html>
